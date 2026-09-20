@@ -1,46 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+<html lang="pt-PT">
 <head>
   <!-- Codificação e responsividade -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="google-site-verification" content="Klnw8qX5gtK7WpBy2mnOscfuhfmLGbeJwiUBqf3FHao" />
+
   <!-- Título e informações principais -->
-  <title>XcrenFlix</title>
-  <meta name="description" content="XcrenFlix é o aplicativo definitivo para quem ama filmes, séries, desenhos animados e animes. Totalmente grátis, com uma vasta coleção de conteúdos para todos os gostos. Assista a filmes e séries em alta qualidade ou faça o download pelo 1DM para assistir offline, onde e quando quiser. O XcrenFlix também oferece uma excelente seleção de animes e desenhos animados, tudo em um único app!" />
-  <meta name="keywords" content="XcrenFlix, filmes grátis, séries online, animes grátis, assistir filmes e séries" />
+  <title>Gojo Service</title>
+  <meta name="description" content="Gojo Service é o bot de WhatsApp mais completo: moderação de grupos, economia com moedas, RPG, efeitos de áudio e vídeo, figurinhas e muito mais, tudo dentro do WhatsApp." />
+  <meta name="keywords" content="Gojo Service, bot de WhatsApp, moderação de grupos, RPG WhatsApp, economia WhatsApp, bot WhatsApp Moçambique" />
   <meta name="author" content="Master" />
   <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="Klnw8qX5gtK7WpBy2mnOscfuhfmLGbeJwiUBqf3FHao" />
+<meta nome="google-site-verification" conteudo="Klnw8qX5gtK7WpBy2mnOscfuhfmLGbeJwiUBqf3FHao" />
   <!-- Ícone -->
-  <link rel="icon" href="https://i.postimg.cc/ZnPsD0qg/app-icon.png" />
+  <link rel="icon" href="https://files.catbox.moe/j5m35y.jpg" />
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet" />
 
   <!-- Ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <!-- Open Graph (Facebook, WhatsApp) -->
-  <meta property="og:title" content="XcrenFlix - Filmes, Séries e Animes Online" />
-  <meta property="og:description" content="XcrenFlix é o aplicativo definitivo para quem ama filmes, séries, desenhos animados e animes. Totalmente grátis, com uma vasta coleção de conteúdos para todos os gostos. Assista a filmes e séries em alta qualidade ou faça o download pelo 1DM para assistir offline, onde e quando quiser. O XcrenFlix também oferece uma excelente seleção de animes e desenhos animados, tudo em um único app!" />
-  <meta property="og:image" content="https://i.postimg.cc/ZnPsD0qg/app-icon.png" />
+  <meta property="og:title" content="Gojo Service - Bot de WhatsApp" />
+  <meta property="og:description" content="Gojo Service é o bot de WhatsApp mais completo: moderação de grupos, economia com moedas, RPG, efeitos de áudio e vídeo, figurinhas e muito mais, tudo dentro do WhatsApp." />
+  <meta property="og:image" content="https://files.catbox.moe/j5m35y.jpg" />
   <meta property="og:url" content="https://meu-site-seven-phi.vercel.app/" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="XcrenFlix - Filmes, Séries e Animes Online" />
-  <meta name="twitter:description" content="XcrenFlix oferece streaming e download gratuito de filmes, séries e animes. Tudo em um único app." />
+  <meta name="twitter:title" content="Gojo Service - Bot de WhatsApp" />
+  <meta name="twitter:description" content="Gojo Service: moderação, economia, RPG e diversão para o teu grupo de WhatsApp." />
   <meta name="twitter:image" content="https://i.postimg.cc/ZnPsD0qg/app-icon.png" />
   
   <style>
     :root {
-      --primary: #ff0000;
-      --primary-dark: #cc0000;
+      --primary: #22d3ee;
+      --primary-dark: #0891b2;
       --secondary: #ffffff;
       --dark: #000000;
       --dark-light: #111111;
@@ -75,9 +74,35 @@
       display: flex;
       flex-direction: column;
       overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Fundo suave animado */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(34, 211, 238, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 85% 75%, rgba(34, 211, 238, 0.10) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(8, 145, 178, 0.08) 0%, transparent 60%);
+      background-size: 200% 200%;
+      animation: fundoSuave 18s ease-in-out infinite;
+    }
+
+    @keyframes fundoSuave {
+      0%   { background-position: 0% 0%; }
+      50%  { background-position: 100% 100%; }
+      100% { background-position: 0% 0%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      body::before { animation: none; }
     }
     
     h1, h2, h3, h4 {
+      font-family: 'Orbitron', sans-serif;
       font-weight: 800;
       line-height: 1.3;
     }
@@ -100,7 +125,7 @@
     
     /* Header Moderno */
     header {
-      background: rgba(0, 0, 0, 0.9);
+      background: rgba(5, 5, 5, 0.55);
       padding: 1rem 2rem;
       position: sticky;
       top: 0;
@@ -208,7 +233,8 @@
       background: var(--primary);
       bottom: 0;
       left: 0;
-      transition: width 0.3s ease;
+      transition: width 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 8px rgba(34, 211, 238, 0.8);
     }
     
     nav ul li a:hover::after {
@@ -249,6 +275,18 @@
       background: var(--primary);
       bottom: -10px;
       left: 30%;
+      border-radius: 2px;
+      box-shadow: 0 0 8px rgba(34, 211, 238, 0.7);
+      animation: linhaBrilho 2.5s ease-in-out infinite;
+    }
+
+    @keyframes linhaBrilho {
+      0%, 100% { box-shadow: 0 0 6px rgba(34, 211, 238, 0.5); opacity: 0.85; }
+      50%      { box-shadow: 0 0 14px rgba(34, 211, 238, 0.9); opacity: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .section-header h2::after { animation: none; }
     }
     
     .section-header p {
@@ -259,10 +297,17 @@
     
     /* Hero Moderno */
     .hero {
-      padding: 4rem 0;
+      padding: 4rem 1.5rem;
       text-align: center;
       position: relative;
       overflow: hidden;
+      border-radius: 28px;
+      margin: 0 0.5rem;
+      animation: heroGlow 4s ease-in-out infinite;
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://files.catbox.moe/j5m35y.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     
     .hero::before {
@@ -270,10 +315,27 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(255,0,0,0.2) 100%);
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(34,211,238,0.25) 50%, rgba(0,0,0,0.8) 100%);
+      background-size: 100% 100%;
       z-index: -1;
+      animation: heroGradiente 8s ease-in-out infinite;
+    }
+
+    @keyframes heroGradiente {
+      0%   { transform: translate(0%, 0%) rotate(0deg); }
+      50%  { transform: translate(-15%, -10%) rotate(3deg); }
+      100% { transform: translate(0%, 0%) rotate(0deg); }
+    }
+
+    @keyframes heroGlow {
+      0%, 100% { box-shadow: 0 0 20px rgba(34, 211, 238, 0.15); }
+      50%      { box-shadow: 0 0 40px rgba(34, 211, 238, 0.3); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero, .hero::before { animation: none; }
     }
     
     .hero h1 {
@@ -300,22 +362,52 @@
       font-weight: 600;
       font-size: 1rem;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
       text-decoration: none;
       border: none;
       margin: 0.5rem;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      white-space: nowrap;
     }
-    
+
+    /* Efeito de brilho a passar pelo botão */
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.35), transparent);
+      transform: skewX(-20deg);
+      transition: left 0.6s ease;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .btn:hover::before {
+      left: 125%;
+    }
+
     .btn-primary {
       background: var(--primary);
       color: var(--light);
-      box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+      box-shadow: 0 4px 15px rgba(34, 211, 238, 0.3);
+      animation: pulsoBotao 2.8s ease-in-out infinite;
     }
     
     .btn-primary:hover {
       background: var(--primary-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 6px 24px rgba(34, 211, 238, 0.55);
+      animation-play-state: paused;
+    }
+
+    @keyframes pulsoBotao {
+      0%, 100% { box-shadow: 0 4px 15px rgba(34, 211, 238, 0.3); }
+      50%      { box-shadow: 0 4px 22px rgba(34, 211, 238, 0.6); }
     }
     
     .btn-outline {
@@ -328,6 +420,11 @@
       background: var(--light);
       color: var(--dark);
       border-color: var(--light);
+      transform: translateY(-3px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .btn-primary { animation: none; }
     }
     
     /* Cards Modernos */
@@ -341,8 +438,8 @@
     
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
-      border-color: rgba(255, 0, 0, 0.3);
+      box-shadow: 0 10px 25px rgba(34, 211, 238, 0.2);
+      border-color: rgba(34, 211, 238, 0.3);
     }
     
     .card-img {
@@ -386,8 +483,8 @@
     
     .feature-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
-      border-color: rgba(255, 0, 0, 0.3);
+      box-shadow: 0 10px 25px rgba(34, 211, 238, 0.2);
+      border-color: rgba(34, 211, 238, 0.3);
     }
     
     .feature-icon {
@@ -527,8 +624,8 @@
     
     .contact-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
-      border-color: rgba(255, 0, 0, 0.3);
+      box-shadow: 0 10px 25px rgba(34, 211, 238, 0.2);
+      border-color: rgba(34, 211, 238, 0.3);
     }
     
     .contact-icon {
@@ -543,6 +640,27 @@
       color: var(--light);
     }
     
+    /* Shimmer nos links de falar com o suporte */
+    .link-shimmer {
+      position: relative;
+      display: inline-block;
+      background: linear-gradient(90deg, currentColor 0%, currentColor 40%, #ffffff 50%, currentColor 60%, currentColor 100%);
+      background-size: 250% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmerLink 2.8s linear infinite;
+    }
+
+    @keyframes shimmerLink {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .link-shimmer { animation: none; -webkit-text-fill-color: currentColor; }
+    }
+
     .contact-card p, .contact-card a {
       color: var(--text-secondary);
       font-size: 0.95rem;
@@ -556,9 +674,11 @@
     
     /* Footer Moderno */
     footer {
-      background: var(--darker);
+      background: rgba(5, 5, 5, 0.6);
+      backdrop-filter: blur(10px);
       padding: 3rem 1.5rem;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
     }
     
     .footer-container {
@@ -609,6 +729,9 @@
       background: var(--primary);
       bottom: 0;
       left: 0;
+      border-radius: 2px;
+      box-shadow: 0 0 8px rgba(34, 211, 238, 0.7);
+      animation: linhaBrilho 2.5s ease-in-out infinite;
     }
     
     .footer-links ul {
@@ -622,12 +745,29 @@
     .footer-links a {
       color: var(--text-secondary);
       font-size: 0.9rem;
-      transition: all 0.2s ease;
+      transition: all 0.25s ease;
+      position: relative;
+      display: inline-block;
+    }
+
+    .footer-links a::before {
+      content: '›';
+      position: absolute;
+      left: -14px;
+      opacity: 0;
+      transition: all 0.25s ease;
+      color: var(--primary);
     }
     
     .footer-links a:hover {
       color: var(--primary);
-      padding-left: 5px;
+      padding-left: 14px;
+      text-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
+    }
+
+    .footer-links a:hover::before {
+      left: 0;
+      opacity: 1;
     }
     
     .social-links {
@@ -646,12 +786,14 @@
       background: var(--card-bg);
       color: var(--text-secondary);
       transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
     
     .social-links a:hover {
       background: var(--primary);
-      color: var(--light);
-      transform: translateY(-3px);
+      color: var(--dark);
+      transform: translateY(-4px) scale(1.08);
+      box-shadow: 0 6px 18px rgba(34, 211, 238, 0.5);
     }
     
     .copyright {
@@ -663,6 +805,11 @@
       font-size: 0.85rem;
     }
     
+    /* Ícone oficial do WhatsApp (verde), independente do tema do site */
+    .icon-whatsapp {
+      color: #25D366 !important;
+    }
+
     /* Responsividade */
     @media (max-width: 992px) {
       .hero h1 {
@@ -720,8 +867,8 @@
       }
       
       .btn {
-        width: 100%;
-        margin: 0.5rem 0;
+        width: auto;
+        margin: 0.5rem auto;
       }
     }
   </style>
@@ -730,8 +877,8 @@
   <!-- Header Moderno -->
   <header>
     <div class="logo">
-      <img src="https://i.postimg.cc/ZnPsD0qg/app-icon.png" alt="XcrenFlix Logo" />
-      <h1>Cren<span>Flix</span></h1>
+      <img src="https://i.postimg.cc/ZnPsD0qg/app-icon.png" alt="Gojo Service Logo" />
+      <h1>Gojo<span>Service</span></h1>
     </div>
     
     <div class="menu-toggle" id="menu-toggle">
@@ -744,7 +891,7 @@
       <ul>
         <li><a href="#home">Início</a></li>
         <li><a href="#features">Recursos</a></li>
-        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#gallery">Como Funciona</a></li>
         <li><a href="#testimonials">Depoimentos</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
@@ -755,15 +902,15 @@
     <!-- Hero Section Moderna -->
     <section class="hero" id="home">
       <div class="section">
-        <h1>Filmes, Séries e Animes em um só lugar</h1>
-        <p>Assista aos melhores conteúdos gratuitamente em qualquer dispositivo. Qualidade Full HD e atualizações constantes.</p>
-        
+        <h1>O assistente de WhatsApp mais completo</h1>
+        <p>Moderação de grupos, economia com moedas e RPG, efeitos de áudio e vídeo, figurinhas, códigos-presente e muito mais — tudo dentro do WhatsApp, sem instalar nada.</p>
+
         <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 2rem;">
-          <a href="https://www.mediafire.com/file/4uj44upkhrbrz16/XcreenFlix_sign.apk/file" class="btn btn-primary">
-            <i class="fas fa-download"></i> Baixar Aplicativo
+          <a href="https://whatsapp.com/channel/0029VbDrJjXAu3aW2B49nE3l" class="btn btn-primary" target="_blank">
+            <i class="fab fa-whatsapp icon-whatsapp"></i> Entrar no grupo oficial
           </a>
-          <a href="https://whatsapp.com/channel/0029Vb6hqyhHwXbFc2bxoZ09" class="btn btn-outline" target="_blank">
-            <i class="fas fa-global"></i> Canal no WhatsApp
+          <a href="#features" class="btn btn-outline">
+            <i class="fas fa-list"></i> Ver funcionalidades
           </a>
         </div>
       </div>
@@ -772,72 +919,91 @@
     <!-- Recursos Modernos -->
     <section class="section" id="features">
       <div class="section-header">
-        <h2>Recursos Exclusivos</h2>
-        <p>Descubra tudo o que o FlixMoz pode oferecer para sua experiência de entretenimento</p>
+        <h2>Funcionalidades</h2>
+        <p>Descubra tudo o que o Gojo Service pode fazer pelo teu grupo de WhatsApp</p>
       </div>
       
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">
-            <i class="fas fa-film"></i>
+            <i class="fas fa-shield-halved"></i>
           </div>
-          <h3>Catálogo Completo</h3>
-          <p>Milhares de filmes, séries e animes atualizados semanalmente para seu entretenimento.</p>
+          <h3>Moderação de Grupos</h3>
+          <p>Antifake, antilink, banimentos e ferramentas para admins manterem o grupo organizado.</p>
         </div>
-        
+
         <div class="feature-card">
           <div class="feature-icon">
-            <i class="fas fa-tv"></i>
+            <i class="fas fa-coins"></i>
           </div>
-          <h3>Canais Online</h3>
-          <p>Acesso a diversos canais de futebol, filmes, séries e notícias em tempo real.</p>
+          <h3>Economia &amp; RPG</h3>
+          <p>Carteira de moedas, mineração, pesca e um sistema de RPG completo para os membros jogarem.</p>
         </div>
-        
+
         <div class="feature-card">
           <div class="feature-icon">
-            <i class="fas fa-mobile-alt"></i>
+            <i class="fas fa-gift"></i>
           </div>
-          <h3>Multiplataforma</h3>
-          <p>Disponível para Android e via navegador em qualquer dispositivo que você preferir.</p>
+          <h3>Códigos-Presente</h3>
+          <p>Resgata códigos diários e ganha moedas extra para gastares na economia do bot.</p>
         </div>
-        
+
         <div class="feature-card">
           <div class="feature-icon">
-            <i class="fas fa-sync-alt"></i>
+            <i class="fas fa-music"></i>
           </div>
-          <h3>Atualizações Constantes</h3>
-          <p>Novos conteúdos adicionados regularmente para você nunca ficar sem opções.</p>
+          <h3>Áudio &amp; Vídeo</h3>
+          <p>Alterador de voz, efeitos de áudio e edição de vídeo direto pelo WhatsApp.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-icons"></i>
+          </div>
+          <h3>Figurinhas &amp; Logos</h3>
+          <p>Cria figurinhas a partir de fotos/vídeos e gera logos personalizados em segundos.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-list-check"></i>
+          </div>
+          <h3>Menu Organizado</h3>
+          <p>Painel com categorias fáceis de navegar — encontra qualquer comando em poucos toques.</p>
         </div>
       </div>
     </section>
 
-    <!-- Galeria Moderna -->
+    <!-- Como Funciona -->
     <section class="section" id="gallery">
       <div class="section-header">
-        <h2>Interface Moderna</h2>
-        <p>Conheça a experiência intuitiva e agradável do FlixMoz</p>
+        <h2>Como Começar</h2>
+        <p>Três passos simples para começares a usar o Gojo Service</p>
       </div>
       
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="https://i.postimg.cc/Ss1v7mgp/file-00000000f610622fb7ba4be05e81dd78.png" alt="Tela 1 XcrenFlix" loading="lazy" />
-          <div class="gallery-overlay">
-            <h3>Pagina inicial</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-plus"></i>
           </div>
+          <h3>1. Entra no grupo</h3>
+          <p>Junta-te ao grupo oficial ou adiciona o bot a um grupo teu.</p>
         </div>
-        
-        <div class="gallery-item">
-          <img src="https://i.postimg.cc/nhGW3y2M/file-000000002c6061f886a15fb98b86ef03.png" alt="Tela 2 do XcrenFlix" loading="lazy" />
-          <div class="gallery-overlay">
-            <h3>Tudo qui preçisa</h3>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-keyboard"></i>
           </div>
+          <h3>2. Escreve o menu</h3>
+          <p>Envia <strong>€menu</strong> numa conversa com o bot para veres o painel de comandos.</p>
         </div>
-        
-        <div class="gallery-item">
-          <img src="https://i.postimg.cc/Y0JgjgKn/file-000000003e18622f8851a13d88ec8e6b.png" alt="Tela 3 do XcrenFlix" loading="lazy" />
-          <div class="gallery-overlay">
-            <h3>Novos lançametos</h3>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-compass"></i>
           </div>
+          <h3>3. Explora</h3>
+          <p>Escolhe uma categoria e começa a usar as funcionalidades do bot.</p>
         </div>
       </div>
     </section>
@@ -846,12 +1012,12 @@
     <section class="section" id="testimonials">
       <div class="section-header">
         <h2>O Que Dizem Nossos Usuários</h2>
-        <p>Veja a opinião de quem já está aproveitando o XcrenFlix</p>
+        <p>Veja a opinião de quem já está aproveitando o Gojo Service</p>
       </div>
       
       <div class="testimonials-grid">
         <div class="testimonial-card">
-          <p class="testimonial-text">O XcrenFlix mudou completamente minha forma de assistir filmes. Agora tenho tudo em um só lugar, com qualidade incrível e sem complicações!</p>
+          <p class="testimonial-text">O Gojo Service organizou completamente o meu grupo. A moderação automática e o menu por categorias facilitam tudo!</p>
           <div class="testimonial-author">
             <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Joana" class="author-avatar" />
             <div class="author-info">
@@ -862,7 +1028,7 @@
         </div>
         
         <div class="testimonial-card">
-          <p class="testimonial-text">Finalmente um app que tem todos os animes que eu gosto, além dos canais de futebol. Uso todos os dias e recomendo para todos!</p>
+          <p class="testimonial-text">O sistema de economia e RPG viciou o meu grupo todo! Todos os dias tem gente a minerar e a pescar moedas.</p>
           <div class="testimonial-author">
             <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Carlos" class="author-avatar" />
             <div class="author-info">
@@ -873,7 +1039,7 @@
         </div>
         
         <div class="testimonial-card">
-          <p class="testimonial-text">A versão web é perfeita para assistir no meu computador, e o aplicativo funciona perfeitamente no celular. Melhor plataforma de streaming!</p>
+          <p class="testimonial-text">Uso os efeitos de voz e as figurinhas todos os dias com os amigos. É rápido e nunca falha!</p>
           <div class="testimonial-author">
             <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maria" class="author-avatar" />
             <div class="author-info">
@@ -895,29 +1061,20 @@
       <div class="contact-grid">
         <div class="contact-card">
           <div class="contact-icon">
-            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-whatsapp icon-whatsapp"></i>
           </div>
           <h3>WhatsApp</h3>
-          <a href="https://wa.me/258852931823" target="_blank">+258852931823</a>
+          <a href="https://wa.me/258852931823" target="_blank" class="link-shimmer">+258852931823</a>
           <p>Suporte oficial</p>
         </div>
         
         <div class="contact-card">
           <div class="contact-icon">
-            <i class="fab fa-telegram"></i>
+            <i class="fas fa-bullhorn"></i>
           </div>
-          <h3>Telegram</h3>
-          <a href="https://t.me/+K1407NVErPRiNGRk" target="_blank">ScrenFlix</a>
-          <p>Siganos no telegram</p>
-        </div>
-        
-        <div class="contact-card">
-          <div class="contact-icon">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <h3>Coreo eletronico</h3>
-          <a href="mailto:jorcelioarmandonhar@gmail.com">XcrenFlix</a>
-          <p>Para assuntos inportantes</p>
+          <h3>Canal Oficial</h3>
+          <a href="https://whatsapp.com/channel/0029VbDrJjXAu3aW2B49nE3l" target="_blank">Seguir canal</a>
+          <p>Novidades e atualizações</p>
         </div>
       </div>
     </section>
@@ -928,13 +1085,13 @@
     <div class="footer-container">
       <div class="footer-about">
         <div class="footer-logo">
-          <img src="https://i.postimg.cc/ZnPsD0qg/app-icon.png" alt="XcrenFlix Logo" />
-          <h2>Xcren<span style="color: var(--primary);">Flix</span></h2>
+          <img src="https://i.postimg.cc/ZnPsD0qg/app-icon.png" alt="Gojo Service Logo" />
+          <h2>Gojo<span style="color: var(--primary);">Service</span></h2>
         </div>
-        <p>A melhor plataforma de entretenimento em Moçambique, com filmes, séries, animes e canais online gratuitos.</p>
+        <p>O bot de WhatsApp mais completo de Moçambique, com moderação, economia, RPG e muito mais.</p>
         <div class="social-links">
-          <a href="https://wa.me/258852931823" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="mailto:jorcelioarmandonhar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/258852931823" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp icon-whatsapp"></i></a>
+          <a href="https://whatsapp.com/channel/0029VbDrJjXAu3aW2B49nE3l" target="_blank" aria-label="Canal"><i class="fas fa-bullhorn"></i></a>
         </div>
       </div>
       
@@ -943,19 +1100,23 @@
         <ul>
           <li><a href="#home">Início</a></li>
           <li><a href="#features">Recursos</a></li>
-          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#gallery">Como Funciona</a></li>
           <li><a href="#testimonials">Depoimentos</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
       </div>
       
       <div class="footer-links">
-        <h3>Downloads</h3>
+        <h3>Suporte</h3>
         <ul>
-          <li><a href="https://www.mediafire.com/file/4uj44upkhrbrz16/XcreenFlix_sign.apk/file">Aplicativo Android</a></li>
-    
+          <li><a href="https://whatsapp.com/channel/0029VbDrJjXAu3aW2B49nE3l" target="_blank">Grupo Oficial</a></li>
+          <li><a href="https://wa.me/258852931823" target="_blank" class="link-shimmer">Falar com o Suporte</a></li>
+        </ul>
+      </div>
+    </div>
+
     <div class="copyright">
-      <p>&copy; 2025 XcrenFlix. Todos os direitos reservados. Desenvolvido por Master</p>
+      <p>&copy; 2025 Gojo Service. Todos os direitos reservados. Desenvolvido por Master</p>
     </div>
   </footer>
 
@@ -995,4 +1156,6 @@
         }
       });
     });
-              </html>
+  </script>
+</body>
+</html>
