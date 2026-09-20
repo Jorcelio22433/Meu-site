@@ -34,7 +34,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Gojo Service - Bot de WhatsApp" />
   <meta name="twitter:description" content="Gojo Service: moderação, economia, RPG e diversão para o teu grupo de WhatsApp." />
-  <meta name="twitter:image" content="https://i.postimg.cc/ZnPsD0qg/app-icon.png" />
+  <meta name="twitter:image" content="https://files.catbox.moe/j5m35y.jpg" />
   
   <style>
     :root {
@@ -304,10 +304,10 @@
       border-radius: 28px;
       margin: 0 0.5rem;
       animation: heroGlow 4s ease-in-out infinite;
-      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://files.catbox.moe/j5m35y.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      transition: background-image 1s ease-in-out;
     }
     
     .hero::before {
@@ -877,7 +877,7 @@
   <!-- Header Moderno -->
   <header>
     <div class="logo">
-      <img src="https://i.postimg.cc/ZnPsD0qg/app-icon.png" alt="Gojo Service Logo" />
+      <img src="https://files.catbox.moe/j5m35y.jpg" alt="Gojo Service Logo" />
       <h1>Gojo<span>Service</span></h1>
     </div>
     
@@ -900,7 +900,7 @@
 
   <main>
     <!-- Hero Section Moderna -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" data-hero-bg>
       <div class="section">
         <h1>O assistente de WhatsApp mais completo</h1>
         <p>Moderação de grupos, economia com moedas e RPG, efeitos de áudio e vídeo, figurinhas, códigos-presente e muito mais — tudo dentro do WhatsApp, sem instalar nada.</p>
@@ -1085,7 +1085,7 @@
     <div class="footer-container">
       <div class="footer-about">
         <div class="footer-logo">
-          <img src="https://i.postimg.cc/ZnPsD0qg/app-icon.png" alt="Gojo Service Logo" />
+          <img src="https://files.catbox.moe/j5m35y.jpg" alt="Gojo Service Logo" />
           <h2>Gojo<span style="color: var(--primary);">Service</span></h2>
         </div>
         <p>O bot de WhatsApp mais completo de Moçambique, com moderação, economia, RPG e muito mais.</p>
@@ -1121,6 +1121,27 @@
   </footer>
 
   <script>
+    // Troca automática do fundo do hero a cada 30 segundos
+    const heroBgImages = [
+      'https://files.catbox.moe/s721g9.jpg',
+      'https://files.catbox.moe/rlr8qw.jpg',
+      'https://files.catbox.moe/6n68g6.jpg'
+    ];
+    const heroBgEl = document.querySelector('[data-hero-bg]');
+    let heroBgIndex = 0;
+
+    function setHeroBg(index) {
+      if (!heroBgEl) return;
+      heroBgEl.style.backgroundImage =
+        `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('${heroBgImages[index]}')`;
+    }
+
+    setHeroBg(heroBgIndex);
+    setInterval(() => {
+      heroBgIndex = (heroBgIndex + 1) % heroBgImages.length;
+      setHeroBg(heroBgIndex);
+    }, 30000);
+
     // Menu Hamburguer
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
